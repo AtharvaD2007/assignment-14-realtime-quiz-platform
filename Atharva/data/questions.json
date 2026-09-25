@@ -1,0 +1,57 @@
+[
+  {
+    "question": "What is Node.js runtime based on?",
+    "options": [
+      "V8",
+      "SpiderMonkey",
+      "Chakra",
+      "JVM"
+    ],
+    "correctOption": 0,
+    "explanation": "Node.js is built on Google's V8 JavaScript engine."
+  },
+  {
+    "question": "Which protocol does Socket.io primarily use for real-time communication?",
+    "options": [
+      "FTP",
+      "WebSocket",
+      "SMTP",
+      "DNS"
+    ],
+    "correctOption": 1,
+    "explanation": "Socket.io uses WebSocket when possible for real-time communication."
+  },
+  {
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "static"
+    ],
+    "correctOption": 2,
+    "explanation": "The const keyword declares a block-scoped constant."
+  },
+  {
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": [
+      "200",
+      "301",
+      "404",
+      "500"
+    ],
+    "correctOption": 2,
+    "explanation": "HTTP 404 means that the requested resource was not found."
+  },
+  {
+    "question": "Which data structure follows FIFO?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctOption": 1,
+    "explanation": "A queue follows First In, First Out."
+  }
+]
