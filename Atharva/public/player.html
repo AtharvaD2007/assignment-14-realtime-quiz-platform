@@ -61,9 +61,14 @@
     </section>
   </main>
 
-  <script src="https://assignment-14-realtime-quiz-platform-1-e30g.onrender.com"></script>
+  <script src="https://assignment-14-realtime-quiz-platform-1-e30g.onrender.com/socket.io/socket.io.js"></script>
   <script>
-    const socket = io("https://assignment-14-realtime-quiz-platform-1-e30g.onrender.com");
+    const socket = io(
+  "https://assignment-14-realtime-quiz-platform-1-e30g.onrender.com",
+  {
+    transports: ["websocket", "polling"]
+  }
+);
 
     let quizPin = "";
     let questionStartTime = 0;
