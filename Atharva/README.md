@@ -4,30 +4,30 @@ A Kahoot/Quizizz-style real-time multiplayer quiz application built with Node.js
 
 ## 🚀 Features
 
-- Host creates a quiz with a unique 4-digit PIN
-- Players join using the PIN
-- Real-time lobby updates
-- Host-controlled quiz start
-- Server-authoritative 15-second question timer
-- Players can answer only once per question
-- Answers submitted after the server timer expires are rejected
-- Speed-based scoring
-- Live leaderboard
-- Correct answer and explanation reveal
-- Final leaderboard
-- In-memory game state
-- Render-ready deployment
+* Host creates a quiz with a unique 4-digit PIN
+* Players join using the PIN
+* Real-time lobby updates
+* Host-controlled quiz start
+* Server-authoritative 15-second question timer
+* Players can answer only once per question
+* Answers submitted after the server timer expires are rejected
+* Speed-based scoring
+* Live leaderboard
+* Correct answer and explanation reveal
+* Final leaderboard
+* In-memory game state
+* Render-ready deployment
 
 ## 🛠️ Tech Stack
 
-- Node.js
-- Express.js
-- Socket.IO
-- CORS
-- dotenv
-- HTML
-- CSS
-- JavaScript
+* Node.js
+* Express.js
+* Socket.IO
+* CORS
+* dotenv
+* HTML
+* CSS
+* JavaScript
 
 ## 📁 Project Structure
 
@@ -86,9 +86,9 @@ Maximum speed bonus = 500
 
 Therefore:
 
-- Instant correct answer = 1000 points
-- Correct answer at 15 seconds = 500 points
-- Wrong answer = 0 points
+* Instant correct answer = 1000 points
+* Correct answer at 15 seconds = 500 points
+* Wrong answer = 0 points
 
 Formula:
 
@@ -100,7 +100,23 @@ score = 500 + speedBonus
 
 The server calculates the actual answer time using its own clock. The client-provided `timeTakenMs` is not trusted for scoring.
 
-## 🌐 Render Deployment
+## 🌐 Live Deployment
+
+### Frontend
+
+```text
+https://assignment-14-realtime-quiz-platfor.vercel.app/
+```
+
+### Backend
+
+```text
+https://assignment-14-realtime-quiz-platform-1-e30g.onrender.com
+```
+
+The frontend communicates with the deployed Socket.IO backend for real-time multiplayer functionality.
+
+## 🚀 Render Deployment
 
 Create a Web Service on Render.
 
@@ -124,14 +140,6 @@ CORS_ORIGIN=*
 
 Do not hard-code the Render port. The application automatically uses Render's `PORT` environment variable.
 
-After deployment, the same Render URL serves:
-
-```text
-/
- /host.html
- /player.html
-```
-
 ## 🔌 Socket Events
 
 ### Host
@@ -148,7 +156,7 @@ quiz:join
 answer:submit
 ```
 
-### Server broadcasts
+### Server Broadcasts
 
 ```text
 quiz:created
@@ -167,4 +175,5 @@ quiz:error
 
 Game state is stored in memory. Restarting the Node.js server removes all active quiz rooms.
 
-For the assignment this is intentional and no database is required.
+For this assignment, this is intentional and no database is required.
+
