@@ -1,1 +1,0 @@
-const socket = io("https://assignment-14-realtime-quiz-platform-6f7a.onrender.com");
